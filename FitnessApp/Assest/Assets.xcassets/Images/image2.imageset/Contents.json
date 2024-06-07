@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "vecteezy_a-cartoon-woman-is-doing-a-exercise-and-yoga-pose-3d-render_44023073.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "vecteezy_a-cartoon-woman-is-doing-a-exercise-and-yoga-pose-3d-render_44023073-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "vecteezy_a-cartoon-woman-is-doing-a-exercise-and-yoga-pose-3d-render_44023073-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

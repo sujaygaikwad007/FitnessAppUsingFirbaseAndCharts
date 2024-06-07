@@ -7,18 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2320D42C12D2F000EBC644 /* extension+DateWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D32C12D2F000EBC644 /* extension+DateWeek.swift */; };
+		1F2320D62C12D32700EBC644 /* extebsion+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D52C12D32700EBC644 /* extebsion+Double.swift */; };
+		1F2320D82C12DF7B00EBC644 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D72C12DF7B00EBC644 /* ActivityModel.swift */; };
+		1F3B1BAF2C119AC400E53111 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */; };
+		1F80FF0C2C117C4000499D30 /* ImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF0B2C117C4000499D30 /* ImageSlider.swift */; };
+		1F80FF0E2C117CB500499D30 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF0D2C117CB500499D30 /* BottomButton.swift */; };
+		1F80FF132C11850F00499D30 /* extensio+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF122C11850F00499D30 /* extensio+Color.swift */; };
+		1F80FF152C118C3800499D30 /* NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF142C118C3800499D30 /* NavTitleView.swift */; };
+		1F80FF172C118E4800499D30 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF162C118E4800499D30 /* StatCard.swift */; };
+		1FD72B562C108D78002EB7A6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD72B552C108D78002EB7A6 /* DataModel.swift */; };
+		1FD72B592C10966F002EB7A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD72B582C10966F002EB7A6 /* HomeView.swift */; };
+		1FE343512C12C8440038BEF0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE343502C12C8440038BEF0 /* HealthKit.framework */; };
+		1FE343532C12C9340038BEF0 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE343522C12C9340038BEF0 /* HealthManager.swift */; };
 		1FE8A2BD2C106A2E00F7BC9A /* FitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8A2BC2C106A2E00F7BC9A /* FitnessAppApp.swift */; };
-		1FE8A2BF2C106A2E00F7BC9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8A2BE2C106A2E00F7BC9A /* ContentView.swift */; };
 		1FE8A2C12C106A3200F7BC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */; };
 		1FE8A2C42C106A3200F7BC9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8A2C32C106A3200F7BC9A /* Preview Assets.xcassets */; };
+		1FE8A2D22C106D0700F7BC9A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2320D32C12D2F000EBC644 /* extension+DateWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+DateWeek.swift"; sourceTree = "<group>"; };
+		1F2320D52C12D32700EBC644 /* extebsion+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extebsion+Double.swift"; sourceTree = "<group>"; };
+		1F2320D72C12DF7B00EBC644 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		1F80FF0B2C117C4000499D30 /* ImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSlider.swift; sourceTree = "<group>"; };
+		1F80FF0D2C117CB500499D30 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		1F80FF122C11850F00499D30 /* extensio+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extensio+Color.swift"; sourceTree = "<group>"; };
+		1F80FF142C118C3800499D30 /* NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTitleView.swift; sourceTree = "<group>"; };
+		1F80FF162C118E4800499D30 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		1FD72B552C108D78002EB7A6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		1FD72B582C10966F002EB7A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1FE3434E2C12C8430038BEF0 /* FitnessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitnessApp.entitlements; sourceTree = "<group>"; };
+		1FE343502C12C8440038BEF0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		1FE343522C12C9340038BEF0 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		1FE8A2B92C106A2E00F7BC9A /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE8A2BC2C106A2E00F7BC9A /* FitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppApp.swift; sourceTree = "<group>"; };
-		1FE8A2BE2C106A2E00F7BC9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE8A2C32C106A3200F7BC9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +53,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE343512C12C8440038BEF0 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3B1BAD2C119AAF00E53111 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		1F80FF0A2C117C2400499D30 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B1BAD2C119AAF00E53111 /* ProgressView */,
+				1F80FF142C118C3800499D30 /* NavTitleView.swift */,
+				1F80FF162C118E4800499D30 /* StatCard.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		1F80FF102C1182F300499D30 /* MyActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				1F80FF0A2C117C2400499D30 /* Component */,
+				1FD72B582C10966F002EB7A6 /* HomeView.swift */,
+			);
+			path = MyActivityView;
+			sourceTree = "<group>";
+		};
+		1F80FF112C11831A00499D30 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				1F80FF0D2C117CB500499D30 /* BottomButton.swift */,
+				1F80FF0B2C117C4000499D30 /* ImageSlider.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		1FE3434F2C12C8440038BEF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FE343502C12C8440038BEF0 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1FE8A2B02C106A2E00F7BC9A = {
 			isa = PBXGroup;
 			children = (
 				1FE8A2BB2C106A2E00F7BC9A /* FitnessApp */,
 				1FE8A2BA2C106A2E00F7BC9A /* Products */,
+				1FE3434F2C12C8440038BEF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +124,13 @@
 		1FE8A2BB2C106A2E00F7BC9A /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				1FE3434E2C12C8430038BEF0 /* FitnessApp.entitlements */,
 				1FE8A2BC2C106A2E00F7BC9A /* FitnessAppApp.swift */,
-				1FE8A2BE2C106A2E00F7BC9A /* ContentView.swift */,
-				1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */,
+				1FE8A2CC2C106A5F00F7BC9A /* Views */,
+				1FE8A2CB2C106A5500F7BC9A /* ViewModel */,
+				1FE8A2CA2C106A4A00F7BC9A /* Model */,
+				1FE8A2CE2C106A7000F7BC9A /* Extension */,
+				1FE8A2CD2C106A6800F7BC9A /* Assest */,
 				1FE8A2C22C106A3200F7BC9A /* Preview Content */,
 			);
 			path = FitnessApp;
@@ -65,6 +142,59 @@
 				1FE8A2C32C106A3200F7BC9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1FE8A2CA2C106A4A00F7BC9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FD72B552C108D78002EB7A6 /* DataModel.swift */,
+				1F2320D72C12DF7B00EBC644 /* ActivityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FE8A2CB2C106A5500F7BC9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FE343522C12C9340038BEF0 /* HealthManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FE8A2CC2C106A5F00F7BC9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F80FF102C1182F300499D30 /* MyActivityView */,
+				1FE8A2D02C106C8900F7BC9A /* OnBoardingViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FE8A2CD2C106A6800F7BC9A /* Assest */ = {
+			isa = PBXGroup;
+			children = (
+				1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */,
+			);
+			path = Assest;
+			sourceTree = "<group>";
+		};
+		1FE8A2CE2C106A7000F7BC9A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1F80FF122C11850F00499D30 /* extensio+Color.swift */,
+				1F2320D32C12D2F000EBC644 /* extension+DateWeek.swift */,
+				1F2320D52C12D32700EBC644 /* extebsion+Double.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1FE8A2D02C106C8900F7BC9A /* OnBoardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				1F80FF112C11831A00499D30 /* Component */,
+				1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */,
+			);
+			path = OnBoardingViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +267,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE8A2BF2C106A2E00F7BC9A /* ContentView.swift in Sources */,
+				1F80FF172C118E4800499D30 /* StatCard.swift in Sources */,
+				1F2320D62C12D32700EBC644 /* extebsion+Double.swift in Sources */,
+				1F80FF0E2C117CB500499D30 /* BottomButton.swift in Sources */,
 				1FE8A2BD2C106A2E00F7BC9A /* FitnessAppApp.swift in Sources */,
+				1F80FF0C2C117C4000499D30 /* ImageSlider.swift in Sources */,
+				1FE343532C12C9340038BEF0 /* HealthManager.swift in Sources */,
+				1FD72B592C10966F002EB7A6 /* HomeView.swift in Sources */,
+				1FE8A2D22C106D0700F7BC9A /* WelcomeView.swift in Sources */,
+				1F80FF132C11850F00499D30 /* extensio+Color.swift in Sources */,
+				1FD72B562C108D78002EB7A6 /* DataModel.swift in Sources */,
+				1F2320D42C12D2F000EBC644 /* extension+DateWeek.swift in Sources */,
+				1F3B1BAF2C119AC400E53111 /* CircularProgressView.swift in Sources */,
+				1F2320D82C12DF7B00EBC644 /* ActivityModel.swift in Sources */,
+				1F80FF152C118C3800499D30 /* NavTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,11 +408,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitnessApp/FitnessApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitnessApp/Preview Content\"";
+				DEVELOPMENT_TEAM = RYNS47QW35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow us ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,11 +440,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitnessApp/FitnessApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitnessApp/Preview Content\"";
+				DEVELOPMENT_TEAM = RYNS47QW35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow us ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
