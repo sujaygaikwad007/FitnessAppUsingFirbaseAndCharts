@@ -4,6 +4,8 @@ struct WelcomeView: View {
     @State var currentIndex = 0
     @State private var navigateToNextView = false
     
+
+    
     var body: some View {
         ZStack {
             Color.clear.ignoresSafeArea()

@@ -1,98 +1,79 @@
 import SwiftUI
 
-enum StatTitle: String {
-    case calories = "Calories"
-    case walk = "Walk"
-    case sleep = "Sleep"
-    case training = "Training"
-    case water = "Water"
-    case heart = "Heart"
-}
-
 struct StatCard: View {
-    
-    let icon: String
-    let title: StatTitle
-    let value: Any
-    let unit: String
+    let activity: ActivityModel
     
     var body: some View {
-        
         VStack(alignment: .leading, spacing: 10) {
-            
             mainTitleAndIcon
-            switch title {
-            case .calories, .walk:
-                CircularProgressView(progress: progressValue(), unit: unit, value: value)
-            case .sleep, .training, .water, .heart:
-                if title == .water || title == .heart {
+            switch activity.title {
+            case "Calories", "Walk":
+                CircularProgressView(progress: progressValue(), unit: activity.unit, value: activity.amount, tintColor: activity.tintColor)
+            case "Sleep", "Training", "Water", "Heart":
+                if activity.title == "Water" || activity.title == "Heart" {
                     waterHeartImage
                 }
                 valueAndUnit
+            default:
+                Text("Unknown activity")
             }
         }
         .padding()
         .frame(height: cardHeight())
-        .background(title == .calories || title == .walk ? Color.theme.accent : Color.white)
+        .background(activity.bgColor)
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 0)
     }
-    
-    
 }
 
-extension StatCard{
-    
+extension StatCard {
     private func cardHeight() -> CGFloat {
-        return (title == .calories || title == .walk || title == .water || title == .heart) ? 200 : 120
+        return (activity.title == "Calories" || activity.title == "Walk" || activity.title == "Water" || activity.title == "Heart") ? 200 : 120
     }
-    
-    private func stringValue() -> String {
-        if let intValue = value as? Int {
-            return "\(intValue)"
-        } else if let doubleValue = value as? Double {
-            return String(format: "%.1f", doubleValue)
-        } else {
-            return ""
-        }
-    }
-    
+  
     private func progressValue() -> Double {
-        if let intValue = value as? Int {
-            let maxValue: Double = (title == .calories) ? 3000 : 10000
-            return min(Double(intValue) / maxValue, 1.0)
-        } else if let doubleValue = value as? Double, title == .walk {
-            return min(doubleValue / 10000, 1.0)
-        } else {
+        
+        guard let amountValue = Double(activity.amount) else {
             return 0.0
         }
+        
+        if activity.title ==  "Calories"{
+            let maxValue: Double = 3000
+            return min(amountValue / maxValue, 1.0)
+        } else if activity.title ==  "Walk" {
+            let maxValue: Double = 10000
+            return min(amountValue / maxValue, 1.0)
+        }else{
+            return 0.0
+        }
+        
+    
     }
     
-    private var mainTitleAndIcon: some View{
+    private var mainTitleAndIcon: some View {
         HStack {
-            Image(systemName: icon)
-                .foregroundColor(title == .calories || title == .walk ? .white : .black)
-            Text(title.rawValue)
+            Image(systemName: activity.image)
+                .foregroundColor(activity.tintColor)
+            Text(activity.title)
                 .font(.headline)
-                .foregroundColor(title == .calories || title == .walk ? .white : .black)
+                .foregroundColor(activity.tintColor)
         }
     }
-    
     
     private var valueAndUnit: some View {
         HStack(spacing: 20) {
             VStack(alignment: .leading) {
-                Text(stringValue())
-                Text(unit)
+                Text(activity.amount)
+                Text(activity.unit)
             }
             Image(systemName: "sleep.circle.fill")
-                .font(.largeTitle)
-                .opacity(title == .sleep ? 1.0 : 0.0)
+                .font(.title)
+                .opacity(activity.title == "Sleep" ? 1.0 : 0.0)
         }
     }
     
     private var waterHeartImage: some View {
-        Image(title == .water ? "Water" : "Heart")
+        Image(activity.title == "Water" ? "Water" : "Heart")
             .resizable()
             .scaledToFit()
             .frame(width: 100, height: 50)

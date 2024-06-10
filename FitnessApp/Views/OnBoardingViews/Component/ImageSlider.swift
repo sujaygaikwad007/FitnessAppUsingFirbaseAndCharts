@@ -3,6 +3,8 @@ import SwiftUI
 struct ImageSlider: View {
     @Binding var currentIndex: Int
     @Binding var navigateToNextView: Bool
+    @EnvironmentObject var manager: HealthManager
+
 
     var body: some View {
         
@@ -45,7 +47,7 @@ struct ImageSlider: View {
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         .background(
-            NavigationLink(destination: HomeView(), isActive: $navigateToNextView) {
+            NavigationLink(destination: HomeView().environmentObject(manager), isActive: $navigateToNextView) {
                 EmptyView()
             }
         )

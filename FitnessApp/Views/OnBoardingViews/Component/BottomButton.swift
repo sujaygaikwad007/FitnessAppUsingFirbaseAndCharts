@@ -2,11 +2,12 @@ import SwiftUI
 
 struct BottomButton: View {
     @Binding var currentIndex: Int
+    @EnvironmentObject var manager: HealthManager
     
     var body: some View {
         Group {
             if currentIndex == sliderItems.count - 1 {
-                NavigationLink(destination: HomeView()) {
+                NavigationLink(destination: HomeView().environmentObject(manager)) {
                     Image(systemName: "arrow.right")
                         .font(.system(size: 25))
                         .foregroundColor(.white)

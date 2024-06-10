@@ -24,6 +24,8 @@
 		1FE8A2C12C106A3200F7BC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */; };
 		1FE8A2C42C106A3200F7BC9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8A2C32C106A3200F7BC9A /* Preview Assets.xcassets */; };
 		1FE8A2D22C106D0700F7BC9A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */; };
+		1FF18A902C16BEB7004E0A8E /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF18A8F2C16BEB7004E0A8E /* TabMenu.swift */; };
+		1FF18A932C16C6F9004E0A8E /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF18A922C16C6F9004E0A8E /* HealthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE8A2C32C106A3200F7BC9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1FF18A8F2C16BEB7004E0A8E /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
+		1FF18A922C16C6F9004E0A8E /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				1F3B1BAD2C119AAF00E53111 /* ProgressView */,
 				1F80FF142C118C3800499D30 /* NavTitleView.swift */,
 				1F80FF162C118E4800499D30 /* StatCard.swift */,
+				1FF18A8F2C16BEB7004E0A8E /* TabMenu.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 				1FE8A2BC2C106A2E00F7BC9A /* FitnessAppApp.swift */,
 				1FE8A2CC2C106A5F00F7BC9A /* Views */,
 				1FE8A2CB2C106A5500F7BC9A /* ViewModel */,
+				1FF18A912C16C6E5004E0A8E /* Service */,
 				1FE8A2CA2C106A4A00F7BC9A /* Model */,
 				1FE8A2CE2C106A7000F7BC9A /* Extension */,
 				1FE8A2CD2C106A6800F7BC9A /* Assest */,
@@ -195,6 +201,14 @@
 				1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */,
 			);
 			path = OnBoardingViews;
+			sourceTree = "<group>";
+		};
+		1FF18A912C16C6E5004E0A8E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1FF18A922C16C6F9004E0A8E /* HealthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +286,8 @@
 				1F80FF0E2C117CB500499D30 /* BottomButton.swift in Sources */,
 				1FE8A2BD2C106A2E00F7BC9A /* FitnessAppApp.swift in Sources */,
 				1F80FF0C2C117C4000499D30 /* ImageSlider.swift in Sources */,
+				1FF18A932C16C6F9004E0A8E /* HealthService.swift in Sources */,
+				1FF18A902C16BEB7004E0A8E /* TabMenu.swift in Sources */,
 				1FE343532C12C9340038BEF0 /* HealthManager.swift in Sources */,
 				1FD72B592C10966F002EB7A6 /* HomeView.swift in Sources */,
 				1FE8A2D22C106D0700F7BC9A /* WelcomeView.swift in Sources */,
