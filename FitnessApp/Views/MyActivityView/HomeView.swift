@@ -4,11 +4,18 @@ struct HomeView: View {
     
     @EnvironmentObject var manager : HealthManager
     
+    @State var loggedUserName =  "User"
+    
     
     var body: some View {
         ZStack {
             ScrollView(showsIndicators:false) {
                 NavTitleView(navTitle: "My Activity", imageName: "list.star")
+                
+                Text("Welcome \(loggedUserName)")
+                    .font(.caption)
+                    .foregroundColor(Color.theme.accent)
+                
                 
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 2), spacing: 20) {
                     

@@ -11,19 +11,37 @@
 		1F2320D62C12D32700EBC644 /* extebsion+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D52C12D32700EBC644 /* extebsion+Double.swift */; };
 		1F2320D82C12DF7B00EBC644 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D72C12DF7B00EBC644 /* ActivityModel.swift */; };
 		1F3B1BAF2C119AC400E53111 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */; };
+		1F4CA3542C36A58B0008C238 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA3532C36A58B0008C238 /* FirebaseAnalytics */; };
+		1F4CA3562C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA3552C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta */; };
+		1F4CA3582C36A58C0008C238 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA3572C36A58C0008C238 /* FirebaseAuth */; };
+		1F4CA35B2C36A6220008C238 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA35A2C36A6220008C238 /* GoogleSignIn */; };
+		1F4CA35D2C36A6220008C238 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA35C2C36A6220008C238 /* GoogleSignInSwift */; };
+		1F4CA3622C36A63A0008C238 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA35F2C36A63A0008C238 /* AuthManager.swift */; };
+		1F4CA3632C36A63A0008C238 /* GoogleSignInAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA3602C36A63A0008C238 /* GoogleSignInAuth.swift */; };
+		1F4CA3642C36A63A0008C238 /* AppleSignInAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA3612C36A63A0008C238 /* AppleSignInAuth.swift */; };
+		1F4CA3672C36A6640008C238 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA3662C36A6640008C238 /* Utilities.swift */; };
+		1F4CA36D2C36AA420008C238 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA36C2C36AA420008C238 /* KeychainAccess */; };
+		1F4CA36F2C36AFAC0008C238 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA36E2C36AFAB0008C238 /* CustomTextField.swift */; };
+		1F4CA3712C36B1310008C238 /* CircularImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA3702C36B1310008C238 /* CircularImageButton.swift */; };
+		1F4CA3732C36B2220008C238 /* LineTextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA3722C36B2220008C238 /* LineTextLine.swift */; };
+		1F4CA3752C36B2DD0008C238 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA3742C36B2DD0008C238 /* SignUpView.swift */; };
+		1F4CA3772C36B85F0008C238 /* UniversalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CA3762C36B85F0008C238 /* UniversalButton.swift */; };
 		1F80FF0C2C117C4000499D30 /* ImageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF0B2C117C4000499D30 /* ImageSlider.swift */; };
 		1F80FF0E2C117CB500499D30 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF0D2C117CB500499D30 /* BottomButton.swift */; };
 		1F80FF132C11850F00499D30 /* extensio+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF122C11850F00499D30 /* extensio+Color.swift */; };
 		1F80FF152C118C3800499D30 /* NavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF142C118C3800499D30 /* NavTitleView.swift */; };
 		1F80FF172C118E4800499D30 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FF162C118E4800499D30 /* StatCard.swift */; };
+		1F95B15F2C3BCF010077FFFC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE343502C12C8440038BEF0 /* HealthKit.framework */; };
+		1F95B1632C3BCF330077FFFC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1F95B1622C3BCF330077FFFC /* FirebaseDatabase */; };
+		1F95B1652C3BF8B90077FFFC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95B1642C3BF8B90077FFFC /* SignInView.swift */; };
 		1FD72B562C108D78002EB7A6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD72B552C108D78002EB7A6 /* DataModel.swift */; };
 		1FD72B592C10966F002EB7A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD72B582C10966F002EB7A6 /* HomeView.swift */; };
-		1FE343512C12C8440038BEF0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE343502C12C8440038BEF0 /* HealthKit.framework */; };
 		1FE343532C12C9340038BEF0 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE343522C12C9340038BEF0 /* HealthManager.swift */; };
 		1FE8A2BD2C106A2E00F7BC9A /* FitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8A2BC2C106A2E00F7BC9A /* FitnessAppApp.swift */; };
 		1FE8A2C12C106A3200F7BC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */; };
 		1FE8A2C42C106A3200F7BC9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8A2C32C106A3200F7BC9A /* Preview Assets.xcassets */; };
 		1FE8A2D22C106D0700F7BC9A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */; };
+		1FECAA492C37BA3D00BB482E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FECAA482C37BA3D00BB482E /* GoogleService-Info.plist */; };
 		1FF18A902C16BEB7004E0A8E /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF18A8F2C16BEB7004E0A8E /* TabMenu.swift */; };
 		1FF18A932C16C6F9004E0A8E /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF18A922C16C6F9004E0A8E /* HealthService.swift */; };
 /* End PBXBuildFile section */
@@ -33,11 +51,22 @@
 		1F2320D52C12D32700EBC644 /* extebsion+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extebsion+Double.swift"; sourceTree = "<group>"; };
 		1F2320D72C12DF7B00EBC644 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		1F4CA35F2C36A63A0008C238 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		1F4CA3602C36A63A0008C238 /* GoogleSignInAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInAuth.swift; sourceTree = "<group>"; };
+		1F4CA3612C36A63A0008C238 /* AppleSignInAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInAuth.swift; sourceTree = "<group>"; };
+		1F4CA3662C36A6640008C238 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1F4CA36A2C36A8990008C238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1F4CA36E2C36AFAB0008C238 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1F4CA3702C36B1310008C238 /* CircularImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageButton.swift; sourceTree = "<group>"; };
+		1F4CA3722C36B2220008C238 /* LineTextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextLine.swift; sourceTree = "<group>"; };
+		1F4CA3742C36B2DD0008C238 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1F4CA3762C36B85F0008C238 /* UniversalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalButton.swift; sourceTree = "<group>"; };
 		1F80FF0B2C117C4000499D30 /* ImageSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSlider.swift; sourceTree = "<group>"; };
 		1F80FF0D2C117CB500499D30 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 		1F80FF122C11850F00499D30 /* extensio+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extensio+Color.swift"; sourceTree = "<group>"; };
 		1F80FF142C118C3800499D30 /* NavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTitleView.swift; sourceTree = "<group>"; };
 		1F80FF162C118E4800499D30 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		1F95B1642C3BF8B90077FFFC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1FD72B552C108D78002EB7A6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		1FD72B582C10966F002EB7A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1FE3434E2C12C8430038BEF0 /* FitnessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitnessApp.entitlements; sourceTree = "<group>"; };
@@ -48,6 +77,7 @@
 		1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FE8A2C32C106A3200F7BC9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1FECAA482C37BA3D00BB482E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1FF18A8F2C16BEB7004E0A8E /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
 		1FF18A922C16C6F9004E0A8E /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +87,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE343512C12C8440038BEF0 /* HealthKit.framework in Frameworks */,
+				1F4CA35B2C36A6220008C238 /* GoogleSignIn in Frameworks */,
+				1F4CA3562C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				1F4CA36D2C36AA420008C238 /* KeychainAccess in Frameworks */,
+				1F4CA3542C36A58B0008C238 /* FirebaseAnalytics in Frameworks */,
+				1F95B15F2C3BCF010077FFFC /* HealthKit.framework in Frameworks */,
+				1F4CA35D2C36A6220008C238 /* GoogleSignInSwift in Frameworks */,
+				1F95B1632C3BCF330077FFFC /* FirebaseDatabase in Frameworks */,
+				1F4CA3582C36A58C0008C238 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +107,25 @@
 				1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */,
 			);
 			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		1F4CA35E2C36A63A0008C238 /* FireBaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				1F4CA3652C36A6640008C238 /* Utilities */,
+				1F4CA35F2C36A63A0008C238 /* AuthManager.swift */,
+				1F4CA3602C36A63A0008C238 /* GoogleSignInAuth.swift */,
+				1F4CA3612C36A63A0008C238 /* AppleSignInAuth.swift */,
+			);
+			path = FireBaseAuth;
+			sourceTree = "<group>";
+		};
+		1F4CA3652C36A6640008C238 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1F4CA3662C36A6640008C238 /* Utilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		1F80FF0A2C117C2400499D30 /* Component */ = {
@@ -97,6 +153,10 @@
 			children = (
 				1F80FF0D2C117CB500499D30 /* BottomButton.swift */,
 				1F80FF0B2C117C4000499D30 /* ImageSlider.swift */,
+				1F4CA36E2C36AFAB0008C238 /* CustomTextField.swift */,
+				1F4CA3702C36B1310008C238 /* CircularImageButton.swift */,
+				1F4CA3722C36B2220008C238 /* LineTextLine.swift */,
+				1F4CA3762C36B85F0008C238 /* UniversalButton.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -129,12 +189,15 @@
 		1FE8A2BB2C106A2E00F7BC9A /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				1F4CA36A2C36A8990008C238 /* Info.plist */,
+				1FECAA482C37BA3D00BB482E /* GoogleService-Info.plist */,
 				1FE3434E2C12C8430038BEF0 /* FitnessApp.entitlements */,
 				1FE8A2BC2C106A2E00F7BC9A /* FitnessAppApp.swift */,
 				1FE8A2CC2C106A5F00F7BC9A /* Views */,
 				1FE8A2CB2C106A5500F7BC9A /* ViewModel */,
 				1FF18A912C16C6E5004E0A8E /* Service */,
 				1FE8A2CA2C106A4A00F7BC9A /* Model */,
+				1F4CA35E2C36A63A0008C238 /* FireBaseAuth */,
 				1FE8A2CE2C106A7000F7BC9A /* Extension */,
 				1FE8A2CD2C106A6800F7BC9A /* Assest */,
 				1FE8A2C22C106A3200F7BC9A /* Preview Content */,
@@ -199,6 +262,8 @@
 			children = (
 				1F80FF112C11831A00499D30 /* Component */,
 				1FE8A2D12C106D0700F7BC9A /* WelcomeView.swift */,
+				1F4CA3742C36B2DD0008C238 /* SignUpView.swift */,
+				1F95B1642C3BF8B90077FFFC /* SignInView.swift */,
 			);
 			path = OnBoardingViews;
 			sourceTree = "<group>";
@@ -227,6 +292,15 @@
 			dependencies = (
 			);
 			name = FitnessApp;
+			packageProductDependencies = (
+				1F4CA3532C36A58B0008C238 /* FirebaseAnalytics */,
+				1F4CA3552C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta */,
+				1F4CA3572C36A58C0008C238 /* FirebaseAuth */,
+				1F4CA35A2C36A6220008C238 /* GoogleSignIn */,
+				1F4CA35C2C36A6220008C238 /* GoogleSignInSwift */,
+				1F4CA36C2C36AA420008C238 /* KeychainAccess */,
+				1F95B1622C3BCF330077FFFC /* FirebaseDatabase */,
+			);
 			productName = FitnessApp;
 			productReference = 1FE8A2B92C106A2E00F7BC9A /* FitnessApp.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +329,11 @@
 				Base,
 			);
 			mainGroup = 1FE8A2B02C106A2E00F7BC9A;
+			packageReferences = (
+				1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1F4CA3592C36A6210008C238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				1F4CA36B2C36AA420008C238 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 1FE8A2BA2C106A2E00F7BC9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,6 +350,7 @@
 			files = (
 				1FE8A2C42C106A3200F7BC9A /* Preview Assets.xcassets in Resources */,
 				1FE8A2C12C106A3200F7BC9A /* Assets.xcassets in Resources */,
+				1FECAA492C37BA3D00BB482E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,19 +363,29 @@
 			files = (
 				1F80FF172C118E4800499D30 /* StatCard.swift in Sources */,
 				1F2320D62C12D32700EBC644 /* extebsion+Double.swift in Sources */,
+				1F95B1652C3BF8B90077FFFC /* SignInView.swift in Sources */,
+				1F4CA3632C36A63A0008C238 /* GoogleSignInAuth.swift in Sources */,
+				1F4CA3732C36B2220008C238 /* LineTextLine.swift in Sources */,
+				1F4CA3752C36B2DD0008C238 /* SignUpView.swift in Sources */,
 				1F80FF0E2C117CB500499D30 /* BottomButton.swift in Sources */,
 				1FE8A2BD2C106A2E00F7BC9A /* FitnessAppApp.swift in Sources */,
 				1F80FF0C2C117C4000499D30 /* ImageSlider.swift in Sources */,
+				1F4CA3712C36B1310008C238 /* CircularImageButton.swift in Sources */,
 				1FF18A932C16C6F9004E0A8E /* HealthService.swift in Sources */,
 				1FF18A902C16BEB7004E0A8E /* TabMenu.swift in Sources */,
+				1F4CA3622C36A63A0008C238 /* AuthManager.swift in Sources */,
 				1FE343532C12C9340038BEF0 /* HealthManager.swift in Sources */,
+				1F4CA3642C36A63A0008C238 /* AppleSignInAuth.swift in Sources */,
 				1FD72B592C10966F002EB7A6 /* HomeView.swift in Sources */,
 				1FE8A2D22C106D0700F7BC9A /* WelcomeView.swift in Sources */,
 				1F80FF132C11850F00499D30 /* extensio+Color.swift in Sources */,
+				1F4CA36F2C36AFAC0008C238 /* CustomTextField.swift in Sources */,
 				1FD72B562C108D78002EB7A6 /* DataModel.swift in Sources */,
 				1F2320D42C12D2F000EBC644 /* extension+DateWeek.swift in Sources */,
 				1F3B1BAF2C119AC400E53111 /* CircularProgressView.swift in Sources */,
 				1F2320D82C12DF7B00EBC644 /* ActivityModel.swift in Sources */,
+				1F4CA3672C36A6640008C238 /* Utilities.swift in Sources */,
+				1F4CA3772C36B85F0008C238 /* UniversalButton.swift in Sources */,
 				1F80FF152C118C3800499D30 /* NavTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,9 +518,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitnessApp/Preview Content\"";
-				DEVELOPMENT_TEAM = RYNS47QW35;
+				DEVELOPMENT_TEAM = JQ3TBQV3X3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fitness App";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow us ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -443,7 +535,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Reapmind.FitnessApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andconnection.live;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -460,9 +552,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitnessApp/Preview Content\"";
-				DEVELOPMENT_TEAM = RYNS47QW35;
+				DEVELOPMENT_TEAM = JQ3TBQV3X3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fitness App";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow us ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -475,7 +569,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Reapmind.FitnessApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andconnection.live;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -505,6 +599,71 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		1F4CA3592C36A6210008C238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		1F4CA36B2C36AA420008C238 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F4CA3532C36A58B0008C238 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1F4CA3552C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		1F4CA3572C36A58C0008C238 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1F4CA35A2C36A6220008C238 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F4CA3592C36A6210008C238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		1F4CA35C2C36A6220008C238 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F4CA3592C36A6210008C238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		1F4CA36C2C36AA420008C238 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F4CA36B2C36AA420008C238 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		1F95B1622C3BCF330077FFFC /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FE8A2B12C106A2E00F7BC9A /* Project object */;
 }

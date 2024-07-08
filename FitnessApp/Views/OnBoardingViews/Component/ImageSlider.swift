@@ -47,7 +47,8 @@ struct ImageSlider: View {
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         .background(
-            NavigationLink(destination: HomeView().environmentObject(manager), isActive: $navigateToNextView) {
+            //HomeView().environmentObject(manager)
+            NavigationLink(destination: SignUpView().environmentObject(manager), isActive: $navigateToNextView) {
                 EmptyView()
             }
         )

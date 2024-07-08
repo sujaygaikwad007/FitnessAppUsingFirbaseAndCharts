@@ -6,8 +6,9 @@ struct BottomButton: View {
     
     var body: some View {
         Group {
+            //HomeView().environmentObject(manager) 
             if currentIndex == sliderItems.count - 1 {
-                NavigationLink(destination: HomeView().environmentObject(manager)) {
+                NavigationLink(destination: SignUpView().environmentObject(manager)  ) {
                     Image(systemName: "arrow.right")
                         .font(.system(size: 25))
                         .foregroundColor(.white)
