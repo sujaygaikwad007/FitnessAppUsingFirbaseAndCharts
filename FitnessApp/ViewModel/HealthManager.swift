@@ -5,15 +5,18 @@ import SwiftUI
 class HealthManager: ObservableObject {
     private let healthService = HealthService()
     private var databaseRef: DatabaseReference!
-    
+
     @Published var activityData: [ActivityModel] = []
     @Published var activities: [String: ActivityModel] = [:]
-    
+
     init() {
-        requestAuthorizationAndFetchData()
         databaseRef = Database.database().reference()
     }
-    
+
+    func startHealthDataFetching() {
+        requestAuthorizationAndFetchData()
+    }
+
     private func requestAuthorizationAndFetchData() {
         healthService.requestAuthorization { [weak self] result in
             switch result {
@@ -26,7 +29,7 @@ class HealthManager: ObservableObject {
             }
         }
     }
-    
+
     private func fetchAllHealthData() {
         healthService.fetchAllHealthData { [weak self] healthData in
             DispatchQueue.main.async {
@@ -34,7 +37,7 @@ class HealthManager: ObservableObject {
                 
                 for (dataType, value) in healthData {
                     var activity: ActivityModel
-                    
+
                     switch dataType {
                     case .walk:
                         activity = ActivityModel(id: 3, title: "Walk", image: "figure.walk", unit: "Steps", amount: "\(Int(value))", tintColor: .black, bgColor: .white)
@@ -65,13 +68,13 @@ class HealthManager: ObservableObject {
                         print("Total Sleep: \(hours) hours and \(minutes) minutes")
                     }
                 }
-                
+
                 // Sending data to Firebase Realtime Database
                 if let username = Auth.auth().currentUser?.displayName {
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd"
                     let todayDate = dateFormatter.string(from: Date())
-                    
+
                     self?.databaseRef.child(todayDate).child(username).setValue(dataToUpload) { error, _ in
                         if let error = error {
                             print("Error writing data to Firebase: \(error.localizedDescription)")
@@ -85,20 +88,20 @@ class HealthManager: ObservableObject {
             }
         }
     }
-    
+
     private func fetchCurrentWeekWorkoutsStats() {
         healthService.fetchCurrentWeekWorkoutsStats { [weak self] totalTimeRunning in
             DispatchQueue.main.async {
                 let activity = ActivityModel(id: 4, title: "Training", image: "stopwatch", unit: "Mins", amount: "\(totalTimeRunning)", tintColor: .black, bgColor: .white)
                 self?.activities["training"] = activity
                 print("Total Running Time: \(totalTimeRunning) minutes")
-                
+
                 // Sending workout stats to Firebase Realtime Database
                 if let username = Auth.auth().currentUser?.displayName {
                     let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd"
                     let todayDate = dateFormatter.string(from: Date())
-                    
+
                     self?.databaseRef.child(todayDate).child(username).child("Training").setValue(totalTimeRunning) { error, _ in
                         if let error = error {
                             print("Error writing data to Firebase: \(error.localizedDescription)")

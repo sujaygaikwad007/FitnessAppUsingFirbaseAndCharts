@@ -3,8 +3,9 @@ import SwiftUI
 struct SignUpView: View {
     @State private var emailText = ""
     @State private var passwordText = ""
-    @State private var isSignUpSuccessful = false
     @State private var loggedUserName: String = ""
+    @State private var isSignUpSuccessful = false
+    @State private var isSignIn = false
     @State private var isHomeViewActive = false
     @EnvironmentObject var manager: HealthManager
 
@@ -21,17 +22,13 @@ struct SignUpView: View {
                 signUpButton
 
                 LineTextLine(text: "Or")
+                
+                UniversalButton(title: "Sign In") {
+                    isSignIn = true
+                }
 
                 socialMediaButtons
-
-                NavigationLink(destination: SignInView(email: emailText, password: passwordText, loggedUserName: loggedUserName).environmentObject(manager), isActive: $isSignUpSuccessful) {
-                    EmptyView()
-                }
-                NavigationLink(destination: HomeView( loggedUserName:loggedUserName).environmentObject(manager), isActive: $isHomeViewActive) {
-                    EmptyView()
-                }
-                
-                
+                navigationLinks
             }
             .padding(.horizontal, 20)
             .navigationBarHidden(true)
@@ -41,6 +38,24 @@ struct SignUpView: View {
 }
 
 extension SignUpView {
+    
+    private var navigationLinks : some View{
+        Group{
+            
+            NavigationLink(destination: SignInView(email: emailText, password: passwordText, loggedUserName: loggedUserName).environmentObject(manager), isActive: $isSignUpSuccessful) {
+                EmptyView()
+            }
+            
+            NavigationLink(destination:SignInView(email: "", password: "", loggedUserName: "").environmentObject(manager) , isActive: $isSignIn) {
+                EmptyView()
+            }
+            
+            NavigationLink(destination: HomeView( loggedUserName:loggedUserName).environmentObject(manager), isActive: $isHomeViewActive) {
+                EmptyView()
+            }
+            
+        }
+    }
 
     private var signUpButton: some View {
         UniversalButton(title: "Sign Up") {
@@ -111,6 +126,7 @@ extension SignUpView {
                 if let name = name {
                     self.isHomeViewActive = true
                     self.loggedUserName = name
+                    self.manager.startHealthDataFetching()
                 }
             }
         } catch {
