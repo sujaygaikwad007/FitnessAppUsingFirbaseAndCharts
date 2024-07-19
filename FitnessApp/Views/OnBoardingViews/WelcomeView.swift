@@ -12,6 +12,7 @@ struct WelcomeView: View {
             
             VStack {
                 ImageSlider(currentIndex: $currentIndex, navigateToNextView: $navigateToNextView)
+                                .environmentObject(HealthManager())
                     .frame(height: 600)
                 
                 Spacer()
@@ -20,6 +21,7 @@ struct WelcomeView: View {
                     .padding(.bottom, 20)
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

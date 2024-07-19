@@ -8,7 +8,7 @@ struct BottomButton: View {
         Group {
             //HomeView().environmentObject(manager) 
             if currentIndex == sliderItems.count - 1 {
-                NavigationLink(destination: SignUpView().environmentObject(manager)  ) {
+                NavigationLink(destination: SignUpView().environmentObject(HealthManager())  ) {
                     Image(systemName: "arrow.right")
                         .font(.system(size: 25))
                         .foregroundColor(.white)
@@ -41,6 +41,6 @@ struct BottomButton: View {
 
 struct BottomButton_Previews: PreviewProvider {
     static var previews: some View {
-        BottomButton(currentIndex: .constant(1))
+        BottomButton(currentIndex: .constant(1)).environmentObject(HealthManager())
     }
 }

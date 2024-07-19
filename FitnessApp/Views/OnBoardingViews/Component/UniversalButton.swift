@@ -10,12 +10,12 @@ struct UniversalButton: View {
         }, label: {
             HStack {
                 Text(title)
-                    .font(.body)
-                    .foregroundColor(Color.white)
+                    .font(.Montserrat_Regular16px)
+                    .foregroundColor(Color.black)
             }
             .frame(height: 50)
             .frame(maxWidth: .infinity)
-            .background(Color.blue)
+            .background(Color.PrimaryColor)
             .cornerRadius(16)
         })
     }

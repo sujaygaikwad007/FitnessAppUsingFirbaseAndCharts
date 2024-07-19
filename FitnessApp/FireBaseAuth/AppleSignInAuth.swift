@@ -1,3 +1,4 @@
+//Apple sign In auth
 import Foundation
 import FirebaseAuth
 import CryptoKit
@@ -7,10 +8,12 @@ import KeychainAccess
 struct AppleSignInResultModel {
     let token: String
     let nonce: String
+    let name: String?
+    let surname: String?
 }
 
 @available(iOS 15.0, *)
-final class AppleSignInAuthHelper: NSObject, ObservableObject {
+final class AppleSignInAuthHelper: NSObject, ObservableObject, ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
 
     private var currentNonce: String?
     @Published var didSignWithApple: Bool = false
@@ -18,13 +21,14 @@ final class AppleSignInAuthHelper: NSObject, ObservableObject {
     private let keychain = Keychain(service: "Reapmind.FitnessApp")
 
     @MainActor
-    func appleSignIn() async throws {
-        startSignInWithAppleFlow()
+    func appleSignIn(completion: @escaping (String?) -> Void) async throws {
+        startSignInWithAppleFlow(completion: completion)
     }
 
     @MainActor
-    func startSignInWithAppleFlow() {
+    private func startSignInWithAppleFlow(completion: @escaping (String?) -> Void) {
         guard let topVc = Utilities.topViewController() else {
+            completion(nil)
             return
         }
 
@@ -38,8 +42,11 @@ final class AppleSignInAuthHelper: NSObject, ObservableObject {
 
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.delegate = self
-        authorizationController.presentationContextProvider = topVc
+        authorizationController.presentationContextProvider = self
         authorizationController.performRequests()
+
+        // Save completion handler for later use
+        self.completionHandler = completion
     }
 
     // Nonce
@@ -75,16 +82,8 @@ final class AppleSignInAuthHelper: NSObject, ObservableObject {
         return hashString
     }
 
-}
-
-extension UIViewController: ASAuthorizationControllerPresentationContextProviding {
-    public func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-        return self.view.window!
-    }
-}
-
-@available(iOS 15.0, *)
-extension AppleSignInAuthHelper: ASAuthorizationControllerDelegate {
+    // Added to store completion handler
+    private var completionHandler: ((String?) -> Void)?
 
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
 
@@ -95,10 +94,14 @@ extension AppleSignInAuthHelper: ASAuthorizationControllerDelegate {
             let nonce = currentNonce else
         {
             print("Error")
+            self.completionHandler?(nil)
             return
         }
 
-        let tokens = AppleSignInResultModel(token: idTokenString, nonce: nonce)
+        let name = appleIDCredential.fullName?.givenName
+        let surname = appleIDCredential.fullName?.familyName
+        
+        let tokens = AppleSignInResultModel(token: idTokenString, nonce: nonce, name: name, surname: surname)
 
         Task {
             do {
@@ -108,16 +111,20 @@ extension AppleSignInAuthHelper: ASAuthorizationControllerDelegate {
                 try storeUserData(appleIDCredential: appleIDCredential)
 
                 self.didSignWithApple = true
+                
+                self.completionHandler?(name)
+                
             } catch {
                 print("Error signing in with Apple: \(error)")
+                self.completionHandler?(nil)
             }
         }
-
     }
 
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
         // Handle error.
         print("Sign in with Apple errored: \(error)")
+        self.completionHandler?(nil)
     }
 
     private func storeUserData(appleIDCredential: ASAuthorizationAppleIDCredential) throws {
@@ -131,4 +138,14 @@ extension AppleSignInAuthHelper: ASAuthorizationControllerDelegate {
         }
         try keychain.set(appleIDCredential.identityToken!, key: "appleIDToken")
     }
+
+    // Conform to ASAuthorizationControllerPresentationContextProviding
+    @MainActor
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        guard let topVc = Utilities.topViewController() else {
+            fatalError("Unable to find top view controller")
+        }
+        return topVc.view.window!
+    }
 }
+

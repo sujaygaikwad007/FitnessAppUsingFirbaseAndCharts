@@ -19,7 +19,6 @@ struct GoogleSignInResultModel {
 
 @available(iOS 15.0, *)
 final class GoogleSignInAuthHelper: ObservableObject {
-    
     @MainActor
     func GogleSignIn(completion: @escaping (String?) -> Void) async throws {
         
@@ -42,6 +41,10 @@ final class GoogleSignInAuthHelper: ObservableObject {
         try await AuthManager.shared.signInWithGoogle(tokens: tokens)
         completion(name)
         
+        UserDefaults.standard.set(accessToken, forKey: "accessToken")
+        UserDefaults.standard.set(name,forKey: "Fname")
+        UserDefaults.standard.set(surname, forKey: "Lname")
+        print("Name: \(name), Surname: \(surname)")
         if let name = name, let surname = surname {
             print("Name: \(name), Surname: \(surname)")
         } else {

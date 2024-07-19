@@ -4,6 +4,10 @@ import SwiftUI
 extension Color{
     
     static let theme = ColorTheme()
+    static let primaryBG = Color("PrimaryBGColor")
+    static let primaryTextColor = Color("PrimaryTextcolor")
+    static let PrimaryColor = Color("PrimaryColor")
+    static let CustomGray = Color("customGray")
 
 }
 

@@ -10,6 +10,10 @@
 		1F2320D42C12D2F000EBC644 /* extension+DateWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D32C12D2F000EBC644 /* extension+DateWeek.swift */; };
 		1F2320D62C12D32700EBC644 /* extebsion+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D52C12D32700EBC644 /* extebsion+Double.swift */; };
 		1F2320D82C12DF7B00EBC644 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2320D72C12DF7B00EBC644 /* ActivityModel.swift */; };
+		1F38F8022C3E6496009AB707 /* ActivityChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38F8012C3E6496009AB707 /* ActivityChartView.swift */; };
+		1F38F8052C3E66A8009AB707 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1F38F8042C3E66A8009AB707 /* Charts */; };
+		1F38F8072C3E67C7009AB707 /* BarChartViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38F8062C3E67C7009AB707 /* BarChartViewWrapper.swift */; };
+		1F38F8092C3E67FF009AB707 /* PieChartViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38F8082C3E67FF009AB707 /* PieChartViewWrapper.swift */; };
 		1F3B1BAF2C119AC400E53111 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */; };
 		1F4CA3542C36A58B0008C238 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA3532C36A58B0008C238 /* FirebaseAnalytics */; };
 		1F4CA3562C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1F4CA3552C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta */; };
@@ -35,7 +39,6 @@
 		1F95B1632C3BCF330077FFFC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1F95B1622C3BCF330077FFFC /* FirebaseDatabase */; };
 		1F95B1652C3BF8B90077FFFC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95B1642C3BF8B90077FFFC /* SignInView.swift */; };
 		1FD72B562C108D78002EB7A6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD72B552C108D78002EB7A6 /* DataModel.swift */; };
-		1FD72B592C10966F002EB7A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD72B582C10966F002EB7A6 /* HomeView.swift */; };
 		1FE343532C12C9340038BEF0 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE343522C12C9340038BEF0 /* HealthManager.swift */; };
 		1FE8A2BD2C106A2E00F7BC9A /* FitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8A2BC2C106A2E00F7BC9A /* FitnessAppApp.swift */; };
 		1FE8A2C12C106A3200F7BC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE8A2C02C106A3200F7BC9A /* Assets.xcassets */; };
@@ -44,12 +47,42 @@
 		1FECAA492C37BA3D00BB482E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FECAA482C37BA3D00BB482E /* GoogleService-Info.plist */; };
 		1FF18A902C16BEB7004E0A8E /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF18A8F2C16BEB7004E0A8E /* TabMenu.swift */; };
 		1FF18A932C16C6F9004E0A8E /* HealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF18A922C16C6F9004E0A8E /* HealthService.swift */; };
+		85595A8C2C40EEBB0032E655 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85595A8B2C40EEBB0032E655 /* SplashScreenView.swift */; };
+		85595A8E2C40F6990032E655 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85595A8D2C40F6990032E655 /* SideMenu.swift */; };
+		85595A902C40F6BA0032E655 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85595A8F2C40F6BA0032E655 /* SideMenuView.swift */; };
+		85606AD02C400422002CF8F7 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85606ACF2C400421002CF8F7 /* BottomBarView.swift */; };
+		85737CFD2C3FE1DB0086E1A1 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85737CFC2C3FE1DB0086E1A1 /* MainDashboardView.swift */; };
+		85737D012C3FE9150086E1A1 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85737D002C3FE9150086E1A1 /* TopBar.swift */; };
+		85A2C62B2C47B39C0018E49C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A2C62A2C47B39C0018E49C /* Fonts.swift */; };
+		85A2C6422C47C9E00018E49C /* Inter-Light-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6302C47C9DE0018E49C /* Inter-Light-BETA.otf */; };
+		85A2C6432C47C9E00018E49C /* Inter-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6312C47C9DE0018E49C /* Inter-ExtraBold.otf */; };
+		85A2C6442C47C9E00018E49C /* Inter-ExtraLight-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6322C47C9DF0018E49C /* Inter-ExtraLight-BETA.otf */; };
+		85A2C6452C47C9E00018E49C /* Inter-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6332C47C9DF0018E49C /* Inter-Black.otf */; };
+		85A2C6462C47C9E00018E49C /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6342C47C9DF0018E49C /* Inter-Bold.otf */; };
+		85A2C6472C47C9E00018E49C /* Inter-LightItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6352C47C9DF0018E49C /* Inter-LightItalic-BETA.otf */; };
+		85A2C6482C47C9E00018E49C /* Inter-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6362C47C9DF0018E49C /* Inter-ExtraBoldItalic.otf */; };
+		85A2C6492C47C9E00018E49C /* Inter-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6372C47C9DF0018E49C /* Inter-BoldItalic.otf */; };
+		85A2C64A2C47C9E00018E49C /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6382C47C9DF0018E49C /* Inter-Regular.otf */; };
+		85A2C64B2C47C9E00018E49C /* Inter-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6392C47C9DF0018E49C /* Inter-Italic.otf */; };
+		85A2C64C2C47C9E00018E49C /* Inter-ThinItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C63A2C47C9DF0018E49C /* Inter-ThinItalic-BETA.otf */; };
+		85A2C64D2C47C9E00018E49C /* Inter-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C63B2C47C9DF0018E49C /* Inter-MediumItalic.otf */; };
+		85A2C64E2C47C9E00018E49C /* Inter-ExtraLightItalic-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C63C2C47C9DF0018E49C /* Inter-ExtraLightItalic-BETA.otf */; };
+		85A2C64F2C47C9E00018E49C /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C63D2C47C9DF0018E49C /* Inter-Medium.otf */; };
+		85A2C6502C47C9E00018E49C /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C63E2C47C9DF0018E49C /* Inter-SemiBold.otf */; };
+		85A2C6512C47C9E00018E49C /* Inter-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C63F2C47C9DF0018E49C /* Inter-SemiBoldItalic.otf */; };
+		85A2C6522C47C9E00018E49C /* Inter-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6402C47C9E00018E49C /* Inter-BlackItalic.otf */; };
+		85A2C6532C47C9E00018E49C /* Inter-Thin-BETA.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6412C47C9E00018E49C /* Inter-Thin-BETA.otf */; };
+		85A2C6552C47E2F10018E49C /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A2C6542C47E2F10018E49C /* Validations.swift */; };
+		85A2C6562C47F9FF0018E49C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A2C6262C47A36B0018E49C /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F2320D32C12D2F000EBC644 /* extension+DateWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+DateWeek.swift"; sourceTree = "<group>"; };
 		1F2320D52C12D32700EBC644 /* extebsion+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extebsion+Double.swift"; sourceTree = "<group>"; };
 		1F2320D72C12DF7B00EBC644 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		1F38F8012C3E6496009AB707 /* ActivityChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityChartView.swift; sourceTree = "<group>"; };
+		1F38F8062C3E67C7009AB707 /* BarChartViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewWrapper.swift; sourceTree = "<group>"; };
+		1F38F8082C3E67FF009AB707 /* PieChartViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewWrapper.swift; sourceTree = "<group>"; };
 		1F3B1BAE2C119AC400E53111 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		1F4CA35F2C36A63A0008C238 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		1F4CA3602C36A63A0008C238 /* GoogleSignInAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInAuth.swift; sourceTree = "<group>"; };
@@ -68,7 +101,6 @@
 		1F80FF162C118E4800499D30 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
 		1F95B1642C3BF8B90077FFFC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1FD72B552C108D78002EB7A6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		1FD72B582C10966F002EB7A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1FE3434E2C12C8430038BEF0 /* FitnessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitnessApp.entitlements; sourceTree = "<group>"; };
 		1FE343502C12C8440038BEF0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		1FE343522C12C9340038BEF0 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
@@ -80,6 +112,33 @@
 		1FECAA482C37BA3D00BB482E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1FF18A8F2C16BEB7004E0A8E /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
 		1FF18A922C16C6F9004E0A8E /* HealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthService.swift; sourceTree = "<group>"; };
+		85595A8B2C40EEBB0032E655 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		85595A8D2C40F6990032E655 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		85595A8F2C40F6BA0032E655 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		85606ACF2C400421002CF8F7 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		85737CFC2C3FE1DB0086E1A1 /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
+		85737D002C3FE9150086E1A1 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		85A2C6262C47A36B0018E49C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		85A2C62A2C47B39C0018E49C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		85A2C6302C47C9DE0018E49C /* Inter-Light-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light-BETA.otf"; sourceTree = "<group>"; };
+		85A2C6312C47C9DE0018E49C /* Inter-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.otf"; sourceTree = "<group>"; };
+		85A2C6322C47C9DF0018E49C /* Inter-ExtraLight-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight-BETA.otf"; sourceTree = "<group>"; };
+		85A2C6332C47C9DF0018E49C /* Inter-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.otf"; sourceTree = "<group>"; };
+		85A2C6342C47C9DF0018E49C /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		85A2C6352C47C9DF0018E49C /* Inter-LightItalic-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-LightItalic-BETA.otf"; sourceTree = "<group>"; };
+		85A2C6362C47C9DF0018E49C /* Inter-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		85A2C6372C47C9DF0018E49C /* Inter-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BoldItalic.otf"; sourceTree = "<group>"; };
+		85A2C6382C47C9DF0018E49C /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		85A2C6392C47C9DF0018E49C /* Inter-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Italic.otf"; sourceTree = "<group>"; };
+		85A2C63A2C47C9DF0018E49C /* Inter-ThinItalic-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ThinItalic-BETA.otf"; sourceTree = "<group>"; };
+		85A2C63B2C47C9DF0018E49C /* Inter-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-MediumItalic.otf"; sourceTree = "<group>"; };
+		85A2C63C2C47C9DF0018E49C /* Inter-ExtraLightItalic-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLightItalic-BETA.otf"; sourceTree = "<group>"; };
+		85A2C63D2C47C9DF0018E49C /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
+		85A2C63E2C47C9DF0018E49C /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		85A2C63F2C47C9DF0018E49C /* Inter-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		85A2C6402C47C9E00018E49C /* Inter-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BlackItalic.otf"; sourceTree = "<group>"; };
+		85A2C6412C47C9E00018E49C /* Inter-Thin-BETA.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin-BETA.otf"; sourceTree = "<group>"; };
+		85A2C6542C47E2F10018E49C /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +150,7 @@
 				1F4CA3562C36A58C0008C238 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
 				1F4CA36D2C36AA420008C238 /* KeychainAccess in Frameworks */,
 				1F4CA3542C36A58B0008C238 /* FirebaseAnalytics in Frameworks */,
+				1F38F8052C3E66A8009AB707 /* Charts in Frameworks */,
 				1F95B15F2C3BCF010077FFFC /* HealthKit.framework in Frameworks */,
 				1F4CA35D2C36A6220008C238 /* GoogleSignInSwift in Frameworks */,
 				1F95B1632C3BCF330077FFFC /* FirebaseDatabase in Frameworks */,
@@ -101,6 +161,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F38F8002C3E6473009AB707 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				1F38F8012C3E6496009AB707 /* ActivityChartView.swift */,
+				1F38F8062C3E67C7009AB707 /* BarChartViewWrapper.swift */,
+				1F38F8082C3E67FF009AB707 /* PieChartViewWrapper.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		1F3B1BAD2C119AAF00E53111 /* ProgressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +201,7 @@
 		1F80FF0A2C117C2400499D30 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				1F38F8002C3E6473009AB707 /* Charts */,
 				1F3B1BAD2C119AAF00E53111 /* ProgressView */,
 				1F80FF142C118C3800499D30 /* NavTitleView.swift */,
 				1F80FF162C118E4800499D30 /* StatCard.swift */,
@@ -143,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				1F80FF0A2C117C2400499D30 /* Component */,
-				1FD72B582C10966F002EB7A6 /* HomeView.swift */,
+				85595A8B2C40EEBB0032E655 /* SplashScreenView.swift */,
 			);
 			path = MyActivityView;
 			sourceTree = "<group>";
@@ -189,6 +260,7 @@
 		1FE8A2BB2C106A2E00F7BC9A /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				85A2C62F2C47C9CD0018E49C /* Font */,
 				1F4CA36A2C36A8990008C238 /* Info.plist */,
 				1FECAA482C37BA3D00BB482E /* GoogleService-Info.plist */,
 				1FE3434E2C12C8430038BEF0 /* FitnessApp.entitlements */,
@@ -233,8 +305,10 @@
 		1FE8A2CC2C106A5F00F7BC9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				85737CFE2C3FE8E10086E1A1 /* Dashboard */,
 				1F80FF102C1182F300499D30 /* MyActivityView */,
 				1FE8A2D02C106C8900F7BC9A /* OnBoardingViews */,
+				85A2C6262C47A36B0018E49C /* Launch Screen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +327,8 @@
 				1F80FF122C11850F00499D30 /* extensio+Color.swift */,
 				1F2320D32C12D2F000EBC644 /* extension+DateWeek.swift */,
 				1F2320D52C12D32700EBC644 /* extebsion+Double.swift */,
+				85A2C62A2C47B39C0018E49C /* Fonts.swift */,
+				85A2C6542C47E2F10018E49C /* Validations.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -274,6 +350,51 @@
 				1FF18A922C16C6F9004E0A8E /* HealthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		85737CFE2C3FE8E10086E1A1 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				85737CFF2C3FE8F70086E1A1 /* DashboardCells */,
+				85737CFC2C3FE1DB0086E1A1 /* MainDashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		85737CFF2C3FE8F70086E1A1 /* DashboardCells */ = {
+			isa = PBXGroup;
+			children = (
+				85737D002C3FE9150086E1A1 /* TopBar.swift */,
+				85606ACF2C400421002CF8F7 /* BottomBarView.swift */,
+				85595A8D2C40F6990032E655 /* SideMenu.swift */,
+				85595A8F2C40F6BA0032E655 /* SideMenuView.swift */,
+			);
+			path = DashboardCells;
+			sourceTree = "<group>";
+		};
+		85A2C62F2C47C9CD0018E49C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				85A2C6332C47C9DF0018E49C /* Inter-Black.otf */,
+				85A2C6402C47C9E00018E49C /* Inter-BlackItalic.otf */,
+				85A2C6342C47C9DF0018E49C /* Inter-Bold.otf */,
+				85A2C6372C47C9DF0018E49C /* Inter-BoldItalic.otf */,
+				85A2C6312C47C9DE0018E49C /* Inter-ExtraBold.otf */,
+				85A2C6362C47C9DF0018E49C /* Inter-ExtraBoldItalic.otf */,
+				85A2C6322C47C9DF0018E49C /* Inter-ExtraLight-BETA.otf */,
+				85A2C63C2C47C9DF0018E49C /* Inter-ExtraLightItalic-BETA.otf */,
+				85A2C6392C47C9DF0018E49C /* Inter-Italic.otf */,
+				85A2C6302C47C9DE0018E49C /* Inter-Light-BETA.otf */,
+				85A2C6352C47C9DF0018E49C /* Inter-LightItalic-BETA.otf */,
+				85A2C63D2C47C9DF0018E49C /* Inter-Medium.otf */,
+				85A2C63B2C47C9DF0018E49C /* Inter-MediumItalic.otf */,
+				85A2C6382C47C9DF0018E49C /* Inter-Regular.otf */,
+				85A2C63E2C47C9DF0018E49C /* Inter-SemiBold.otf */,
+				85A2C63F2C47C9DF0018E49C /* Inter-SemiBoldItalic.otf */,
+				85A2C6412C47C9E00018E49C /* Inter-Thin-BETA.otf */,
+				85A2C63A2C47C9DF0018E49C /* Inter-ThinItalic-BETA.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +421,7 @@
 				1F4CA35C2C36A6220008C238 /* GoogleSignInSwift */,
 				1F4CA36C2C36AA420008C238 /* KeychainAccess */,
 				1F95B1622C3BCF330077FFFC /* FirebaseDatabase */,
+				1F38F8042C3E66A8009AB707 /* Charts */,
 			);
 			productName = FitnessApp;
 			productReference = 1FE8A2B92C106A2E00F7BC9A /* FitnessApp.app */;
@@ -333,6 +455,7 @@
 				1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				1F4CA3592C36A6210008C238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				1F4CA36B2C36AA420008C238 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				1F38F8032C3E66A7009AB707 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 1FE8A2BA2C106A2E00F7BC9A /* Products */;
 			projectDirPath = "";
@@ -349,8 +472,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE8A2C42C106A3200F7BC9A /* Preview Assets.xcassets in Resources */,
+				85A2C64C2C47C9E00018E49C /* Inter-ThinItalic-BETA.otf in Resources */,
+				85A2C6492C47C9E00018E49C /* Inter-BoldItalic.otf in Resources */,
+				85A2C64D2C47C9E00018E49C /* Inter-MediumItalic.otf in Resources */,
 				1FE8A2C12C106A3200F7BC9A /* Assets.xcassets in Resources */,
+				85A2C6532C47C9E00018E49C /* Inter-Thin-BETA.otf in Resources */,
+				85A2C6562C47F9FF0018E49C /* Launch Screen.storyboard in Resources */,
+				85A2C6452C47C9E00018E49C /* Inter-Black.otf in Resources */,
+				85A2C6432C47C9E00018E49C /* Inter-ExtraBold.otf in Resources */,
+				85A2C64F2C47C9E00018E49C /* Inter-Medium.otf in Resources */,
+				85A2C6522C47C9E00018E49C /* Inter-BlackItalic.otf in Resources */,
+				85A2C64A2C47C9E00018E49C /* Inter-Regular.otf in Resources */,
+				85A2C6482C47C9E00018E49C /* Inter-ExtraBoldItalic.otf in Resources */,
+				85A2C64E2C47C9E00018E49C /* Inter-ExtraLightItalic-BETA.otf in Resources */,
+				85A2C6472C47C9E00018E49C /* Inter-LightItalic-BETA.otf in Resources */,
 				1FECAA492C37BA3D00BB482E /* GoogleService-Info.plist in Resources */,
+				85A2C6442C47C9E00018E49C /* Inter-ExtraLight-BETA.otf in Resources */,
+				85A2C6422C47C9E00018E49C /* Inter-Light-BETA.otf in Resources */,
+				85A2C64B2C47C9E00018E49C /* Inter-Italic.otf in Resources */,
+				85A2C6462C47C9E00018E49C /* Inter-Bold.otf in Resources */,
+				85A2C6502C47C9E00018E49C /* Inter-SemiBold.otf in Resources */,
+				85A2C6512C47C9E00018E49C /* Inter-SemiBoldItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,26 +504,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F80FF172C118E4800499D30 /* StatCard.swift in Sources */,
+				1F38F8022C3E6496009AB707 /* ActivityChartView.swift in Sources */,
 				1F2320D62C12D32700EBC644 /* extebsion+Double.swift in Sources */,
 				1F95B1652C3BF8B90077FFFC /* SignInView.swift in Sources */,
+				85737CFD2C3FE1DB0086E1A1 /* MainDashboardView.swift in Sources */,
 				1F4CA3632C36A63A0008C238 /* GoogleSignInAuth.swift in Sources */,
 				1F4CA3732C36B2220008C238 /* LineTextLine.swift in Sources */,
 				1F4CA3752C36B2DD0008C238 /* SignUpView.swift in Sources */,
 				1F80FF0E2C117CB500499D30 /* BottomButton.swift in Sources */,
 				1FE8A2BD2C106A2E00F7BC9A /* FitnessAppApp.swift in Sources */,
+				85737D012C3FE9150086E1A1 /* TopBar.swift in Sources */,
 				1F80FF0C2C117C4000499D30 /* ImageSlider.swift in Sources */,
 				1F4CA3712C36B1310008C238 /* CircularImageButton.swift in Sources */,
 				1FF18A932C16C6F9004E0A8E /* HealthService.swift in Sources */,
 				1FF18A902C16BEB7004E0A8E /* TabMenu.swift in Sources */,
 				1F4CA3622C36A63A0008C238 /* AuthManager.swift in Sources */,
+				85A2C62B2C47B39C0018E49C /* Fonts.swift in Sources */,
 				1FE343532C12C9340038BEF0 /* HealthManager.swift in Sources */,
 				1F4CA3642C36A63A0008C238 /* AppleSignInAuth.swift in Sources */,
-				1FD72B592C10966F002EB7A6 /* HomeView.swift in Sources */,
+				85606AD02C400422002CF8F7 /* BottomBarView.swift in Sources */,
 				1FE8A2D22C106D0700F7BC9A /* WelcomeView.swift in Sources */,
 				1F80FF132C11850F00499D30 /* extensio+Color.swift in Sources */,
+				85595A902C40F6BA0032E655 /* SideMenuView.swift in Sources */,
+				1F38F8072C3E67C7009AB707 /* BarChartViewWrapper.swift in Sources */,
 				1F4CA36F2C36AFAC0008C238 /* CustomTextField.swift in Sources */,
 				1FD72B562C108D78002EB7A6 /* DataModel.swift in Sources */,
+				85595A8E2C40F6990032E655 /* SideMenu.swift in Sources */,
+				85A2C6552C47E2F10018E49C /* Validations.swift in Sources */,
 				1F2320D42C12D2F000EBC644 /* extension+DateWeek.swift in Sources */,
+				85595A8C2C40EEBB0032E655 /* SplashScreenView.swift in Sources */,
+				1F38F8092C3E67FF009AB707 /* PieChartViewWrapper.swift in Sources */,
 				1F3B1BAF2C119AC400E53111 /* CircularProgressView.swift in Sources */,
 				1F2320D82C12DF7B00EBC644 /* ActivityModel.swift in Sources */,
 				1F4CA3672C36A6640008C238 /* Utilities.swift in Sources */,
@@ -522,11 +674,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fitness App";
+				INFOPLIST_KEY_CFBundleDisplayName = iWellness;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow us ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -556,11 +709,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fitness App";
+				INFOPLIST_KEY_CFBundleDisplayName = iWellness;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow us ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -601,6 +755,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1F38F8032C3E66A7009AB707 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -628,6 +790,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1F38F8042C3E66A8009AB707 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F38F8032C3E66A7009AB707 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
 		1F4CA3532C36A58B0008C238 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1F4CA3522C36A58B0008C238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

@@ -35,14 +35,6 @@ struct ImageSlider: View {
                     .padding(.vertical, 20)
                 }
                 .tag(index)
-                .onChange(of: currentIndex) { newValue in
-                    if newValue == sliderItems.count - 1 {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                            navigateToNextView = true
-
-                        }
-                    }
-                }
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))

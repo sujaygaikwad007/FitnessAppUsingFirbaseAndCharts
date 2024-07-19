@@ -9,11 +9,11 @@ struct NavTitleView: View {
             Text(navTitle)
                 .font(.largeTitle)
                 .bold()
-                .foregroundColor(Color.theme.accent)
+                //.foregroundColor(Color.primaryTextColor)
             Spacer()
             Image(systemName: "\(imageName)")
                 .font(.title2)
-                .foregroundColor(Color.theme.accent)
+                //.foregroundColor(Color.primaryTextColor)
         }
         .padding()
         

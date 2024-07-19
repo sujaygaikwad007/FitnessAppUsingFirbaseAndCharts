@@ -8,7 +8,6 @@ struct ActivityModel {
     let image: String
     let unit :String
     let amount: String
-    let tintColor: Color
-    let bgColor: Color
+    let IconBGcolor: Color
     
 }

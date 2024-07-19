@@ -27,11 +27,18 @@ final class AuthManager {
     
     // Sign Up With Email and Password
     @available(iOS 15.0, *)
-    func signUpWithEmail(email: String, password: String) async throws -> AuthDataResultModel {
+    func signUpWithEmail(email: String, password: String, displayName: String) async throws -> AuthDataResultModel {
+        // Create user using Firebase Authentication
         let authDataResult = try await Auth.auth().createUser(withEmail: email, password: password)
+        
+        // Update user profile with display name
+        let changeRequest = authDataResult.user.createProfileChangeRequest()
+        changeRequest.displayName = displayName
+        try await changeRequest.commitChanges()
+        
+        // Return the modified AuthDataResultModel
         return AuthDataResultModel(user: authDataResult.user)
     }
-    
     // Sign In With Google
     @available(iOS 15.0, *)
     func signInWithGoogle(tokens: GoogleSignInResultModel) async throws -> AuthDataResultModel {
